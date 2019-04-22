@@ -4,10 +4,10 @@
 
 rm -f pep8.log pyflakes.log
 
-PYTHONPATH=. python -m coverage run test.py
+PYTHONPATH=. python -m /usr/lib64/python2.7/site-packages/coverage run test.py
 
-python -m coverage xml -o coverage.xml
-python -m coverage html -d coverage
+python -m /usr/lib64/python2.7/site-packages/coverage xml -o coverage.xml
+python -m /usr/lib64/python2.7/site-packages/coverage html -d /usr/lib64/python2.7/site-packages/coverage
 
 pep8 --max-line-length=120 pystache > pep8.log || true
 pyflakes pystache > pyflakes.log || true
